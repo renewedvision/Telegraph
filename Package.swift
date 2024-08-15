@@ -1,9 +1,10 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.5
 
 import PackageDescription
 
 let package = Package(
     name: "Telegraph",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v9),
         .tvOS(.v9),
@@ -17,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket.git", from: "7.6.5"),
-        .package(url: "https://github.com/Building42/HTTPParserC.git", from: "9.2.0")
+        .package(url: "https://github.com/renewedvision/HTTPParserC.git", branch: "main")
     ],
     targets: [
         .target(
